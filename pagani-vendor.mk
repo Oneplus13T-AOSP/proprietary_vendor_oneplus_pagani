@@ -925,6 +925,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libafCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParam_Cam3.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam0.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam0.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
+    vendor/oneplus/pagani/proprietary/product/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/dolby_vision.cfg \
+    vendor/oneplus/pagani/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_mtp/acdb_cal.acdb \
     vendor/oneplus/pagani/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/display_apollo_list_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
@@ -1032,7 +1034,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/vendor/lib64/camera/imx480_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx480_3.pb \
     vendor/oneplus/pagani/proprietary/vendor/lib64/camera/imx615_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx615_3.pb \
     vendor/oneplus/pagani/proprietary/vendor/lib64/camera/paganiFront_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/paganiFront_3.pb \
-    vendor/oneplus/pagani/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin
+    vendor/oneplus/pagani/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
+    vendor/oneplus/pagani/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -1305,11 +1308,15 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libtfestriping \
     libubifocus \
+    libui-stock \
+    libutils-stock \
     libvideoml \
     sensors.qsh \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
+    libdolbyeffect_4.1 \
+    liboplusdolbyeffect_4.1 \
     com.qti.sensor.paganiFront \
     com.qti.sensor.paganiMain \
     com.qti.sensor.paganiTele \
@@ -1347,6 +1354,7 @@ PRODUCT_PACKAGES += \
     libCaptureBokeh \
     libDocRectification \
     libEIS \
+    libEISLive \
     libFDClite \
     libFaceBeautyJni \
     libFaceBeautyPre \
@@ -1462,6 +1470,7 @@ PRODUCT_PACKAGES += \
     libwrapper_te \
     libyuvwrapper \
     libzlib \
+    vendor.dolby.dvs-V1-ndk \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
