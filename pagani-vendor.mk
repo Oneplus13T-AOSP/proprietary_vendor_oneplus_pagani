@@ -92,6 +92,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/AIAE_Models/AIAEVideoModelWide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/AIAE_Models/AIAEVideoModelWide.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/BodySeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/BodySeg.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/CaliData/stereoParams_golden.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/CaliData/stereoParams_golden.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/DitherTabU8:$(TARGET_COPY_OUT_ODM)/etc/camera/DitherTabU8 \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/M_FaceAttribute_RGB.model:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB.model \
@@ -362,6 +363,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/fb_model/unify_skin_base.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/unify_skin_base.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/fb_model/whiteToneLut.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/whiteToneLut.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/fb_model/whiteToneLut.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/whiteToneLut.png \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/fb_original:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_original \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/fdc_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_cl.cache \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/fdc_lite_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_lite_cl.cache \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/filters_lut/B1VLf4peM:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/B1VLf4peM \
@@ -684,6 +686,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/model/obj_det.tflite:$(TARGET_COPY_OUT_ODM)/etc/camera/model/obj_det.tflite \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/model_fdc.data:$(TARGET_COPY_OUT_ODM)/etc/camera/model_fdc.data \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/mvg_sat_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/mvg_sat_config.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/mwcs_model_params.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwcs_model_params.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/neon_yuv_LUT_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/neon_yuv_LUT_64.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle \
