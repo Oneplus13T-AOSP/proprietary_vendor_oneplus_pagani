@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/BodySeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/BodySeg.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/DitherTabU8:$(TARGET_COPY_OUT_ODM)/etc/camera/DitherTabU8 \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/M_FaceAttribute_RGB.model:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB.model \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/Owl_Algo_model/Owl_Algo_M_FHD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/Owl_Algo_model/Owl_Algo_M_FHD.bin \
@@ -126,6 +127,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/aigc/libs/libQnnHtpV79Stub.so:$(TARGET_COPY_OUT_ODM)/etc/camera/aigc/libs/libQnnHtpV79Stub.so \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/aigc/libs/libQnnSystem.so:$(TARGET_COPY_OUT_ODM)/etc/camera/aigc/libs/libQnnSystem.so \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/aigc/libs/libzlib.so:$(TARGET_COPY_OUT_ODM)/etc/camera/aigc/libs/libzlib.so \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/algo/json/DitherTabU8:$(TARGET_COPY_OUT_ODM)/etc/camera/algo/json/DitherTabU8 \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/algo/json/video_ltm.json:$(TARGET_COPY_OUT_ODM)/etc/camera/algo/json/video_ltm.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/algo/json/video_ltm_ctrl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/algo/json/video_ltm_ctrl.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/anc/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model_post \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
@@ -188,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/config/pickref_params.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/config/pickref_params.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/config/quick_visibility_white_list:$(TARGET_COPY_OUT_ODM)/etc/camera/config/quick_visibility_white_list \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/config/sr_params.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/config/sr_params.xml \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/config/video_ai_proc_cfg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_ai_proc_cfg.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/distortionParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/distortionParams.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/dng/ColorMatrix1_paganiMain.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ColorMatrix1_paganiMain.txt \
@@ -200,6 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/dng/D65HUESATMap_paganiTele.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/D65HUESATMap_paganiTele.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/dng/ToneCurve_paganiMain.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_paganiMain.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/dng/ToneCurve_paganiTele.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_paganiTele.txt \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/dolby_vainr_cfg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/dolby_vainr_cfg.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/eis_camera.vcfg \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/facerestore/InitParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/facerestore/InitParams.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/facerestore/fr_models/BDET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/facerestore/fr_models/BDET.bin \
@@ -721,6 +727,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/tele_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/tele_mapxy_33x25.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/text_enhance_yuv_v1.tflite:$(TARGET_COPY_OUT_ODM)/etc/camera/text_enhance_yuv_v1.tflite \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/v10_vamm_sig_norm_0408_8143-SIM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/v10_vamm_sig_norm_0408_8143-SIM.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/vainr_cfg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/vainr_cfg.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/video_ltm.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_ltm.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/camera/video_ltm_ctrl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_ltm_ctrl.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json \
@@ -1328,6 +1337,8 @@ PRODUCT_PACKAGES += \
     com.oplus.node.sstabdefer \
     com.oplus.node.sstabphoto \
     com.oplus.node.sstabrealt \
+    com.oplus.node.videoainr \
+    com.oplus.node.videoltm \
     com.oplus.stats.aec \
     com.oplus.stats.af \
     com.oplus.stats.awb \
@@ -1382,6 +1393,8 @@ PRODUCT_PACKAGES += \
     libSpecRecon \
     libSuperRaw \
     libUpScale \
+    libVideoAIProc \
+    libVideoLTM \
     libWaterMark \
     lib_rectify \
     libaecCustom \
@@ -1479,6 +1492,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.provider.xml \
+    libVideoLTM.so \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \

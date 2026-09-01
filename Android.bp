@@ -11313,6 +11313,77 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.oplus.node.videoainr",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.videoainr.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libutils",
+                "libcutils",
+                "libextensionlayer",
+                "libhwconfigurationutil",
+                "libcamxcommonutils",
+                "libVideoAIProc",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.videoltm",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.videoltm.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libutils",
+                "libcutils",
+                "libOpenCL",
+                "libhwconfigurationutil",
+                "libVideoLTM",
+                "libcamxcommonutils",
+                "liboutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.oplus.stats.aec",
     owner: "oneplus",
     strip: {
@@ -12886,6 +12957,58 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVideoAIProc",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libVideoAIProc.so",
+            ],
+            shared_libs: [
+                "libc++_shared",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVideoLTM",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libVideoLTM.so",
+            ],
+            shared_libs: [
+                "libtrace",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
                 "libdl",
                 "libc",
                 "libm",
@@ -15357,6 +15480,15 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "libVideoLTM.so",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/camera/algo/lib/arm64-v8a/libVideoLTM.so",
+    filename_from_src: true,
+    sub_dir: "camera/algo/lib/arm64-v8a",
+    device_specific: true,
 }
 
 prebuilt_etc_xml {
