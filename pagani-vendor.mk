@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_Vivid_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_Vivid_Fliter.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Lut3D_311:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_311 \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Lut3D_312:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_312 \
+    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/panelchaplin:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/panelchaplin \
     vendor/oneplus/pagani/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/pagani/proprietary/odm/etc/acdbdata/up_ve_enpuv5_ha.eai:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/up_ve_enpuv5_ha.eai \
@@ -735,9 +736,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/video_ltm_ctrl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_ltm_ctrl.json \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/display/cwb_weightspos.json:$(TARGET_COPY_OUT_ODM)/etc/display/cwb_weightspos.json \
     vendor/oneplus/pagani/proprietary/odm/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json \
     vendor/oneplus/pagani/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
+    vendor/oneplus/pagani/proprietary/odm/etc/fusionlight_profile/fusionlight_Main_2_3.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_2_3.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/occe_create.rc:$(TARGET_COPY_OUT_ODM)/etc/init/occe_create.rc \
@@ -886,6 +890,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/firmware/tp/24821/sys_touch_algo_feature_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/tp/24821/sys_touch_algo_feature_config.xml \
     vendor/oneplus/pagani/proprietary/odm/firmware/tp/24821/sys_touch_function_feature_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/tp/24821/sys_touch_function_feature_config.xml \
     vendor/oneplus/pagani/proprietary/odm/firmware/tp/24821/sys_touch_scene_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/tp/24821/sys_touch_scene_config.xml \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b00:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b00 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b01:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b01 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b02:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b02 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b03:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b03 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b04:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b04 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b05:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b05 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b06:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b06 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b07:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b07 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.b08:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b08 \
+    vendor/oneplus/pagani/proprietary/odm/firmware/uff_face.mdt:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.mdt \
     vendor/oneplus/pagani/proprietary/odm/firmware/uff_jv.b00:$(TARGET_COPY_OUT_ODM)/firmware/uff_jv.b00 \
     vendor/oneplus/pagani/proprietary/odm/firmware/uff_jv.b01:$(TARGET_COPY_OUT_ODM)/firmware/uff_jv.b01 \
     vendor/oneplus/pagani/proprietary/odm/firmware/uff_jv.b02:$(TARGET_COPY_OUT_ODM)/firmware/uff_jv.b02 \
@@ -947,8 +961,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/vendor/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
-    vendor/oneplus/pagani/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/pagani/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/pagani/proprietary/vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/oneplus/pagani/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
@@ -1479,6 +1491,7 @@ PRODUCT_PACKAGES += \
     libsharebuffer_impl \
     libssd_det \
     libstface_fd_api \
+    libstfaceunlockocl_uff \
     libstfd_mobile_api \
     libtrace \
     libvega_common \
