@@ -742,11 +742,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/odm/etc/fusionlight_profile/fusionlight_Main_2_3.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_2_3.json \
     vendor/oneplus/pagani/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
+    vendor/oneplus/pagani/proprietary/odm/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dvs-aidl-service.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/occe_create.rc:$(TARGET_COPY_OUT_ODM)/etc/init/occe_create.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
-    vendor/oneplus/pagani/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/p_7_a0020_backlight_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0020_backlight_data.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/p_7_a0020_cinema_eyeprotect_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0020_cinema_eyeprotect_data.xml \
@@ -962,6 +962,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/pagani/proprietary/vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/pagani/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/oneplus/pagani/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
     vendor/oneplus/pagani/proprietary/vendor/etc/sensors/config/qsh_camera_imx480_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx480_3.json \
@@ -1510,10 +1511,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.provider.xml \
     libVideoLTM.so \
+    dvs-aidl-service.xml \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.oplus.camera.aon-impl.xml \
     vendor.qti.camera.provider-service_64 \
+    dvs-aidl-service \
     vendor.oplus.hardware.cammidasservice-V1-service \
     occe_create
+
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/pagani/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/pagani/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
