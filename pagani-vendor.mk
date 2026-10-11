@@ -1522,5 +1522,4 @@ PRODUCT_PACKAGES += \
     occe_create
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/pagani/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
