@@ -5024,9 +5024,8 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libfastcvopt",
-                "libscveObjectTracker",
-                "libproj_sot",
                 "com.qti.stats.common",
+                "com.qti.stats.sotr",
                 "libz",
                 "libc++",
                 "libc",
@@ -7191,6 +7190,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qti.stats.sotr",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/com.qti.stats.sotr.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libutils",
+                "libcamxcoreutils",
+                "libcommonchiutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libfastcvopt",
+                "libbitmlenginev2",
+                "libopencv",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.mcx.distortionmapper",
     owner: "oneplus",
     strip: {
@@ -7579,6 +7620,7 @@ cc_prebuilt_library_shared {
                 "vendor.oplus.hardware.camera_rfi-V1-service-impl",
                 "libcam.odnn.interface",
                 "libopluscameraframeboost",
+                "liboplus_lightsensorprovider",
                 "libeva",
                 "libsynx",
                 "libolc_vnd",
@@ -10789,7 +10831,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdolbyeffect_4.1",
+    name: "libdolbyeffect_5.0",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10797,17 +10839,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/product/lib64/libdolbyeffect_4.1.so",
+                "proprietary/product/lib64/libdolbyeffect_5.0.so",
             ],
             shared_libs: [
+                "libGLESv3",
+                "libEGL",
                 "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
+                "libc",
             ],
         },
     },
@@ -10817,7 +10857,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liboplusdolbyeffect_4.1",
+    name: "liboplusdolbyeffect_5.0",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10825,10 +10865,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/product/lib64/liboplusdolbyeffect_4.1.so",
+                "proprietary/product/lib64/liboplusdolbyeffect_5.0.so",
             ],
             shared_libs: [
-                "libdolbyeffect_4.1",
+                "libdolbyeffect_5.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -11717,6 +11757,7 @@ cc_prebuilt_library_shared {
                 "vendor.oplus.hardware.camera.aon-service-impl",
                 "android.frameworks.sensorservice@1.0",
                 "libsensorbridge",
+                "liboplus_lightsensorprovider",
                 "libbinder_ndk",
                 "vendor.oplus.hardware.charger-V5-ndk",
                 "liboutils",
@@ -11924,7 +11965,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libselinux",
                 "libexif-jpeg-aps",
-                "libextendfile",
                 "libalog",
                 "libc++",
                 "libc",
@@ -14738,6 +14778,39 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplus_lightsensorprovider",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liboplus_lightsensorprovider.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libbinder_ndk",
+                "libhwconfigurationutil",
+                "libui",
+                "liblog",
+                "libcutils",
+                "libsensorbridge",
+                "android.hardware.camera.provider-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",

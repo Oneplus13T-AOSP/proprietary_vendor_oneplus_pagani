@@ -953,6 +953,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libafCustomParam_Cam2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParam_Cam2.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libafCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParam_Cam3.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam0.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam0.bin \
+    vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam2.bin \
+    vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam3.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
     vendor/oneplus/pagani/proprietary/product/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
@@ -1244,6 +1246,7 @@ PRODUCT_PACKAGES += \
     com.qti.qseeutils \
     com.qti.settings.sm8750 \
     com.qti.stats.common \
+    com.qti.stats.sotr \
     com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.nonlinearmapper \
@@ -1343,8 +1346,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
-    libdolbyeffect_4.1 \
-    liboplusdolbyeffect_4.1 \
+    libdolbyeffect_5.0 \
+    liboplusdolbyeffect_5.0 \
     com.qti.sensor.paganiFront \
     com.qti.sensor.paganiMain \
     com.qti.sensor.paganiTele \
@@ -1480,6 +1483,7 @@ PRODUCT_PACKAGES += \
     libmvgfusion \
     libocce3a \
     libocompression \
+    liboplus_lightsensorprovider \
     liboplusdfx \
     libopluspdparam \
     liboprec_audrec \
