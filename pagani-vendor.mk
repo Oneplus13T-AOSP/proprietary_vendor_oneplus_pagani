@@ -774,6 +774,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/config/pakala_mtp_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_pocket.json \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/sns_gyro_cal.json \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/static_lut_bt2020_to_sRGB_mm.cube:$(TARGET_COPY_OUT_ODM)/etc/static_lut_bt2020_to_sRGB_mm.cube \
     vendor/oneplus/pagani/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/vibrator/809/def/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/809/def/effect_1.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/vibrator/809/def/effect_10.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/809/def/effect_10.bin \
@@ -927,6 +928,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SKhynix-HN8T274EJKX130.bin \
     vendor/oneplus/pagani/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
     vendor/oneplus/pagani/proprietary/odm/firmware/ufs/ufs_version_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/ufs/ufs_version_config.xml \
+    vendor/oneplus/pagani/proprietary/odm/lib64/camera/AIAWB_q.odnn:$(TARGET_COPY_OUT_ODM)/lib64/camera/AIAWB_q.odnn \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/awb_parameter_default.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_default.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/awb_parameter_paganiFront.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_paganiFront.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/awb_parameter_paganiMain.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_paganiMain.bin \
@@ -1522,4 +1524,5 @@ PRODUCT_PACKAGES += \
     occe_create
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/pagani/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
