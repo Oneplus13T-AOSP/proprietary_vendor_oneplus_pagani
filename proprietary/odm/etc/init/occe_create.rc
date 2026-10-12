@@ -1,16 +1,16 @@
-/***************************************************************
-** Copyright (C), 2020-2030, OPLUS Mobile Comm Corp., Ltd.
-**
-** File: - occe_create
-** Description:
-** Version: 1.0
-** Date : 2020/4/1
-** Author: AnabaoShao
-**
-** ----------------------Revision History: --------------------
-**  <author>    <date>     <version >          <desc>
-**  AnabaoShao  2020/4/1       1.0          build this module
-***************************************************************/
+# /***************************************************************
+# ** Copyright (C), 2020-2030, OPLUS Mobile Comm Corp., Ltd.
+# **
+# ** File: - occe_create
+# ** Description:
+# ** Version: 1.0
+# ** Date : 2020/4/1
+# ** Author: AnabaoShao
+# **
+# ** ----------------------Revision History: --------------------
+# **  <author>    <date>     <version >          <desc>
+# **  AnabaoShao  2020/4/1       1.0          build this module
+# ***************************************************************/
 
 service occe_create /odm/bin/occe_create
     class main
