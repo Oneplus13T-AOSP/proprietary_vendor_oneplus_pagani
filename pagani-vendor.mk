@@ -1380,11 +1380,13 @@ PRODUCT_PACKAGES += \
     libAncHumanSegFigureFusion \
     libAncSegBaseSdk \
     libAncSegmentSdk \
+    libAutoFocusCrop \
     libBasicTonePhoto \
     libBokehPre \
     libCNamaSDK_vendor \
     libCS \
     libCaptureBokeh \
+    libColorMark \
     libDocRectification \
     libEIS \
     libEISLive \
@@ -1421,6 +1423,7 @@ PRODUCT_PACKAGES += \
     lib_rectify \
     libaecCustom \
     libai_perception_scene_detect \
+    libaiboost_sydet \
     libaisal \
     libaisd \
     libaisd_fullfov \
