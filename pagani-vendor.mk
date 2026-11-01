@@ -6,14 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/pagani
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Center_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Center_P3.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Center_sRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Center_sRGB.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Enhance_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Enhance_P3.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Enhance_sRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Enhance_sRGB.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Stand_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Stand_P3.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_Stand_sRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Stand_sRGB.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_StandardMode_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_StandardMode_P3.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/3D-Lut_StandardMode_sRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_StandardMode_sRGB.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_100nit.odf:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_100nit.odf \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_2nit.odf:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_2nit.odf \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_max.odf:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_max.odf \
@@ -39,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/AdjustValue:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/AdjustValue \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_COMP3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_COMP3.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_ColorInvert_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_ColorInvert_Fliter.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_FPS.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_FPS.txt \
@@ -53,8 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_OldMovie_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_OldMovie_Fliter.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_RPG.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_RPG.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Game_Vivid_Fliter.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Game_Vivid_Fliter.txt \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Lut3D_311:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_311 \
-    vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/Lut3D_312:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/Lut3D_312 \
     vendor/oneplus/pagani/proprietary/odm/etc/PanelChaplin/panelchaplin:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/panelchaplin \
     vendor/oneplus/pagani/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/pagani/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
@@ -742,10 +731,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/odm/etc/fusionlight_profile/fusionlight_Main_2_3.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_2_3.json \
     vendor/oneplus/pagani/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
+    vendor/oneplus/pagani/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dvs-aidl-service.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/init.camera_update.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_update.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/occe_create.rc:$(TARGET_COPY_OUT_ODM)/etc/init/occe_create.rc \
+    vendor/oneplus/pagani/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/pagani/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/p_7_a0020_backlight_data.xml:$(TARGET_COPY_OUT_ODM)/etc/p_7_a0020_backlight_data.xml \
@@ -774,6 +765,26 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/config/pakala_mtp_pocket.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/pakala_mtp_pocket.json \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/sns_gyro_cal.json \
     vendor/oneplus/pagani/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MOVIE_ANALOG.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_ANALOG.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MOVIE_BLUETOOTH.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_BLUETOOTH.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MOVIE_DIGITAL.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_DIGITAL.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MOVIE_GALILEO.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_GALILEO.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MUSIC_ANALOG.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MUSIC_ANALOG.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MUSIC_BLUETOOTH.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MUSIC_BLUETOOTH.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MUSIC_DIGITAL.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MUSIC_DIGITAL.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/HP_MUSIC_GALILEO.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MUSIC_GALILEO.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MOVIE.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MOVIE.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MUSIC.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MUSIC.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl1.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl1.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl10.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl10.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl2.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl2.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl3.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl3.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl4.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl4.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl5.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl5.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl6.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl6.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl7.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl7.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl8.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl8.bin \
+    vendor/oneplus/pagani/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl9.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl9.bin \
     vendor/oneplus/pagani/proprietary/odm/etc/static_lut_bt2020_to_sRGB_mm.cube:$(TARGET_COPY_OUT_ODM)/etc/static_lut_bt2020_to_sRGB_mm.cube \
     vendor/oneplus/pagani/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/oneplus/pagani/proprietary/odm/etc/vibrator/809/def/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/809/def/effect_1.bin \
@@ -956,6 +967,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam2.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/libpdCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam3.bin \
     vendor/oneplus/pagani/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
+    vendor/oneplus/pagani/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/pagani/proprietary/product/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/system/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/dolby_vision.cfg \
     vendor/oneplus/pagani/proprietary/vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_mtp/acdb_cal.acdb \
@@ -964,6 +976,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/vendor/etc/display_dbvgain_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_dbvgain_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
+    vendor/oneplus/pagani/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/pagani/proprietary/vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/pagani/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
@@ -1413,6 +1426,7 @@ PRODUCT_PACKAGES += \
     libOplusPDCore \
     libOpo_awb \
     libPDParamParser \
+    libPanelChaplin \
     libRedeyeReduce \
     libSpecRecon \
     libSuperRaw \
@@ -1486,6 +1500,7 @@ PRODUCT_PACKAGES += \
     libmvgfusion \
     libocce3a \
     libocompression \
+    liboplus_audiox \
     liboplus_lightsensorprovider \
     liboplusdfx \
     libopluspdparam \
@@ -1510,6 +1525,7 @@ PRODUCT_PACKAGES += \
     libwrapper_te \
     libyuvwrapper \
     libzlib \
+    libOplusSpatializerAidl \
     vendor.dolby.dvs-V1-ndk \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
@@ -1524,11 +1540,20 @@ PRODUCT_PACKAGES += \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
+    manifest_touch_aidl.xml \
+    secure_element-service.xml \
+    secure_element_omapi_service.xml \
     vendor.oplus.camera.aon-impl.xml \
+    vintf_manifext_aidl_panelchaplin.xml \
     vendor.qti.camera.provider-service_64 \
+    android.hardware.secure_element-service.qti \
     dvs-aidl-service \
+    vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.cammidasservice-V1-service \
     occe_create
+
+PRODUCT_PACKAGES += \
+    vendor_etc_hal_uuid_map_7_xml
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/pagani/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
